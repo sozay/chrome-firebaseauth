@@ -1,0 +1,28 @@
+{
+    "name" : "searchrome",
+    "description" : "Best way to manage your favorites",
+    "version" : "0.1.0",
+    "manifest_version" : 2,
+    "icons" : {
+        "128" : "./icons/icon_128.png"
+    },
+    "background" : {
+        "scripts": ["./background.js"]
+    },
+    "options_page" : "",
+    "browser_action": {
+        "default_popup" : "./popup.html"
+    },
+    "permissions": [
+        "identity",
+        "https://*/*",
+        "activeTab",
+        "background"
+      ],
+    
+      "content_security_policy": "script-src 'self' https://www.gstatic.com https://apis.google.com https://www.googleapis.com https://securetoken.googleapis.com https://www.google.com; object-src 'self'"
+
+    
+    
+    
+}
